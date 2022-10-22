@@ -32,7 +32,7 @@ a {
 .inner input {
     background-color: #FAFBFC;
     width: 400px;
-    height: 50px;
+    height: 60px;
     position: relative;
     margin: 0 0 75px 0;
     font-family: "YdestreetB";
@@ -41,25 +41,28 @@ a {
     border-radius: 15px;
     padding: 0 0 0 10px;
     border: none;
+    box-shadow: 5px 5px 10px #BEC8CA;
 }
-.inner button{
+.inner input:focus {
+    outline: 1px solid #808080;
+}
+.inner button {
     border: none;
     background-color: #FAFBFC;
     font-weight: bold;
     color: #404040;
-}
-.inner button {
     font-family: "YdestreetB";
     width: 200px;
     height: 60px;
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 30px;
+    box-shadow: 5px 5px 10px #BEC8CA;
 }
 .inner .signup-text {
     font-family: "YdestreetB";
     color: #808080;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin: 70px 0 0 0;
 }
