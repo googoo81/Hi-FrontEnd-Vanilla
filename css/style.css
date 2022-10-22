@@ -59,6 +59,11 @@ a {
     font-size: 30px;
     box-shadow: 5px 5px 10px #BEC8CA;
 }
+.inner button:active {
+    margin-left: 0px;
+    margin-top : 0px;
+    box-shadow: 2px 2px 4px #BEC8CA;
+}
 .inner .signup-text {
     font-family: "YdestreetB";
     color: #808080;
