@@ -3,10 +3,69 @@ body {
     margin: 0;
     background-color: #D9D9D9;
 }
+@font-face {
+    font-family: YdestreetB;
+    src: url(../fonts/Ydestreet_FONT/YdestreetL.otf);
+}
+a {
+    text-decoration: none;
+}
 
 .inner {
     background-color: #F2F6F7;
     height: 100vh;
     width: 45%;
+    position: relative;
 }
-
+.login-box {
+    position: absolute;
+    margin: 100px;
+}
+.login-text {
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    font-family: "YdestreetB";
+    margin: 0 0 30px 0;
+    cursor: default;
+}
+.inner input {
+    background-color: #FAFBFC;
+    width: 400px;
+    height: 50px;
+    position: relative;
+    margin: 0 0 75px 0;
+    font-family: "YdestreetB";
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 0 0 0 10px;
+    border: none;
+}
+.inner button{
+    border: none;
+    background-color: #FAFBFC;
+    font-weight: bold;
+    color: #404040;
+}
+.inner button {
+    font-family: "YdestreetB";
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.inner .signup-text {
+    font-family: "YdestreetB";
+    color: #808080;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 70px 0 0 0;
+}
+.inner .signup-text .sub-text {
+    cursor: default;
+}
+.inner .signup-text .text-hyper {
+    color: #FFC033;
+}
