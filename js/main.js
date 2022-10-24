@@ -14,13 +14,13 @@ function GoToEnroll()
 
 	var obEmail = document.getElementById("email");
 	if (!obEmail.value) {
-		alert("이메일을 입력하세요!");
+		alert("이메일을 입력해주십시오.");
 		obEmail.focus();	
 		return;
 	}
 	else {
 		if(!CheckEmail(obEmail.value))	{
-			alert("이메일 형식이 잘못되었습니다");
+			alert("이메일 형식이 잘못되었습니다.");
 			obEmail.focus();
 			return;
 		}
