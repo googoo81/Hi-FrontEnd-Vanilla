@@ -45,7 +45,7 @@ a {
     box-shadow: 5px 5px 10px #BEC8CA;
 }
 .inner input:focus {
-    outline: 1px solid #808080;
+    outline: 0px solid #808080;
 }
 .inner button {
     border: none;
@@ -59,10 +59,9 @@ a {
     cursor: pointer;
     font-size: 30px;
     box-shadow: 5px 5px 10px #BEC8CA;
+    margin: 0 0 0 25%;
 }
 .inner button:active {
-    margin-left: 0px;
-    margin-top : 0px;
     box-shadow: 2px 2px 4px #BEC8CA;
 }
 .inner .signup-text {
