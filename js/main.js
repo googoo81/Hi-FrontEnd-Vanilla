@@ -1,7 +1,7 @@
-function CheckEmail(str)
+function CheckId(str)
 {
-    var reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
-    if(!reg_email.test(str)) {
+    var reg_id = /^s([0-9a-zA-Z_\.-]+)0([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+    if(!reg_id.test(str)) {
         return false;
     }
     else {
@@ -12,16 +12,16 @@ function CheckEmail(str)
 function GoToEnroll()
 {
 
-	var obEmail = document.getElementById("email");
-	if (!obEmail.value) {
-		alert("이메일을 입력해주십시오.");
-		obEmail.focus();	
+	var obId = document.getElementById("id");
+	if (!obId.value) {
+		alert("아이디을 입력해주십시오.");
+		obId.focus();	
 		return;
 	}
 	else {
-		if(!CheckEmail(obEmail.value))	{
-			alert("이메일 형식이 잘못되었습니다.");
-			obEmail.focus();
+		if(!CheckEmail(obId.value))	{
+			alert("아이디 형식이 잘못되었습니다.");
+			obId.focus();
 			return;
 		}
 	}
