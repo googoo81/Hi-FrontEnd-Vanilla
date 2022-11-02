@@ -16,11 +16,11 @@ function GoToEnroll()
 	var obId = document.getElementById("id");
 	if (!obId.value) {
 		alert("아이디을 입력해주십시오.");
-		obId.focus();	
+		obId.focus();
 		return;
 	}
 	else {
-		if(!CheckId(obId.value))	{
+		if(!CheckId(obId.value)){
 			alert("아이디 형식이 잘못되었습니다.");
 			obId.focus();
 			return;
