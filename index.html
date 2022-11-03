@@ -36,7 +36,7 @@
 
     <link rel="stylesheet" href="./css/login.css" />
 
-    <script defer src="./js/main.js"></script>
+    <script defer src="./js/login.js"></script>
 
 </head>
 <body>
@@ -50,10 +50,10 @@
           </div>
           <div class="input-text">
             <label for="id">@gsm.hs.kr</label>
-            <input id="id" type="text" placeholder="아이디" />
+            <input id="id" type="text" maxlength="6" placeholder="아이디" />
           </div>
           <div class="input-password">
-            <input type="password" placeholder="비밀번호" />
+            <input type="password" maxlength="18" placeholder="비밀번호" />
           </div>
           <a href="void:javascript(0)">
             <button OnClick = "javascript:GoToEnroll()">로그인</button>
