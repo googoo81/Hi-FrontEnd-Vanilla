@@ -28,7 +28,6 @@ function GoToEnroll()
 	}
 }
 
-
 /* Password accord check */
 function check_pw(){
  
