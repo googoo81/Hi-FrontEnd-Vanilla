@@ -34,7 +34,7 @@
     <meta property="og:image:height" content="630" />
 
     <!-- Favicon -->
-    <link rel="icon" href="./images/HI_Logo_icon.png" />
+    <link rel="icon" href="../images/HI_Logo_icon.png" />
     <!--브라우저 스타일 초기화-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <!--Google Fonts - 나눔고딕-->
@@ -44,12 +44,35 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
     <link rel="stylesheet" href="../css/signup.css" />
+    <script defer src="../js/signup.js"></script>
 </head>
 <body>
     
-    <section>
-
-    </section>
+    <table>
+        <tr>
+            <td>*</td>
+            <td>이메일</td>
+            <td class="input-text">
+                <!-- <label for="id">@gsm.hs.kr</label> -->
+                <input id="id" type="text" maxlength="6" placeholder="이메일" />
+            </td>
+        </tr>
+        <tr >
+            <td>*</td>
+            <td>비밀번호</td>
+            <td><input type="password" name="userPW" id="pw" onchange="check_pw()"></td>
+        </tr>
+        <tr>
+            <td width="5%">*</td>
+            <td width="20%">비밀번호 확인</td>
+            <td><input type="password" name="userPW2" id="pw2" onchange="check_pw()">&nbsp;<span id="check"></span></td>
+        </tr>
+        <tr><td>
+        <a href="void:javascript(0)">
+            <button OnClick = "javascript:GoToEnroll()">로그인</button>
+        </a>
+        </tr></td>
+    </table>
 
 </body>
 </html>
