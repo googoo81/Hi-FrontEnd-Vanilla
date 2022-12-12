@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi</title>
+
+    <!-- Open graph -->
+    <!--http://ogp.me/-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hi" />
+    <meta property="og:title" content="Homebase Interface" />
+    <meta property="og:description" content="Hi는 광주 소프트웨어 마이스터 고등학교 학생들의 홈베이스 신청을 더욱 편리하게 하기 위한 웹서비스 입니다." />
+    <meta property="og:image" content="./images/HI_Logo.png" />
+    <meta property="og:url" content="http://gsm.gen.hs.kr/main/main.php" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!--iOS-->
+    <meta property="al:ios:app_name" content="Hi" /> 
+    <!--Android-->
+    <meta property="al:android:app_name" content="Hi" />
+    <meta property="al:web:url" content="http://gsm.gen.hs.kr/main/main.php" />
+    
+    <!-- twitter Card -->
+    <!-- https://developer.twitter.com/en -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="Hi" />
+    <meta property="twitter:title" content="Homebase Interface" />
+    <meta property="twitter:description" content="Hi는 광주 소프트웨어 마이스터 고등학교 학생들의 홈베이스 신청을 더욱 편리하게 하기 위한 웹서비스 입니다." />
+    <meta property="twitter:image" content="./images/HI_Logo.png" />
+    <meta property="twitter:url" content="http://gsm.gen.hs.kr/main/main.php" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/Hi-FrontEnd-Vanilla/public/images/HI_Logo_icon.png" />
+    <!--브라우저 스타일 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="/Hi-FrontEnd-Vanilla/public/css/signup.css" />
+    <script defer src="/Hi-FrontEnd-Vanilla/app/js/signup.js"></script>
+
+</head>
+<body>
+
+    <div class="inner">
+        <div class="login-box">
+          <div class="login-text">
+            <h1>SIGN UP</h1>
+          </div>
+          <div class="input-text">
+            <label for="id">@gsm.hs.kr</label>
+            <input class="underline" id="id" type="text" maxlength="6" placeholder="아이디" />
+          </div>
+          <div class="input-password">
+            <input class="underline" type="password" name="userPW" id="pw" onchange="check_pw()" maxlength="18" placeholder="비밀번호" />
+          </div>
+          <div class="input-password">
+            <input class="underline" type="password" name="userPW2" id="pw2" onchange="check_pw()" maxlength="18" placeholder="비밀번호 확인" />
+          </div>
+          <div class="password-check">
+            <span id="check"></span>
+          </div>
+          <button OnClick = "javascript:GoToEnroll()" class="openBtn">회원가입</button>
+          <!-- modalBox -->
+          <div class="modal hidden">
+            <div class="bg"></div>
+            <div class="modalBox">
+              <div class="check-text">
+                <h1>인증번호 확인</h1>
+              </div>
+              <div class="sub-text">
+                <p>알려주신 이메일로 인증번호를 보냈어요!</p>
+              </div>
+              <div class="number-check">
+                <input type="text" maxlength='1' id="number" class="border-line num1" />
+                <input type="text" maxlength="1" id="number" class="border-line num2" />
+                <input type="text" maxlength="1" id="number" class="border-line num3" />
+                <input type="text" maxlength="1" id="number" class="border-line num4" />
+              </div>
+              <button class="closeBtn">확인 </button>
+              <div class="resend-text">
+                <a class="cant-text">인증번호를 받지 못했나요?</a>
+                <a href="javascript:void(0)" class="text-hyper">재발송</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="signup-text">
+            <a class="sub-text">계정이 있으신가요?</a>
+            <a href="/Hi-FrontEnd-Vanilla/public/html/index.html" class="text-hyper">로그인</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- login-image-box -->
+      <div class="login-image-box">
+        <img class="login-image" src="/Hi-FrontEnd-Vanilla/public/images/HI_login_thema_image.png" alt="login_thema_image" />
+      </div>
+
+</body>
+</html>

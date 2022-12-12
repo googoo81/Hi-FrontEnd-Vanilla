@@ -1,0 +1,110 @@
+/* Main Visual */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+@font-face {
+    font-family: YdestreetB;
+    src: url(../fonts/Ydestreet_FONT/YdestreetL.otf);
+}
+@font-face {
+    font-family: Pretendard;
+    src: url(../fonts/Pretendard-1.3.6/LICENSE.txt);
+}
+a {
+    text-decoration: none;
+}
+input.underline {
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+}
+
+/* Login Section */
+.inner {
+    width: 300px;
+    position: relative;
+}
+.login-box {
+    position: absolute;
+    margin: 100px;
+}
+.login-text {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    font-family: "YdestreetB";
+    margin: 10% 0 15px 0;
+    cursor: default;
+}
+.inner label {
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    margin: 20px 0 0 250px;
+    font-family: "Pretendard";  
+    font-weight: 500;
+    color: #76787F;
+    font-size: 18px;
+}
+.inner input {
+    position: relative;
+    width: 360px;
+    height: 60px;
+    margin: 0 0 50px 0;
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 4px;
+}
+.inner input.underline {
+    box-sizing: border-box;
+    border-bottom: 3px solid #999;
+    border-collapse: collapse;
+}
+.inner input.underline:focus {
+    outline: none;
+    border-bottom: 3px solid #FFB001;
+}
+.inner button {
+    border: none;
+    background-color: #FFD068;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Pretendard";
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 60px 0 0 15%;
+}
+.inner .signup-text {
+    font-family: "Pretendard";
+    color: #808080;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 30px 0 0 20%;
+}
+.inner .signup-text .sub-text {
+    cursor: default;
+}
+.inner .signup-text .text-hyper {
+    color: #FFC033;
+}
+
+.login-image-box {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 650px;
+    margin-bottom: 0px;
+}
+.login-image {  
+    position: absolute;
+    width: 800px;
+    height: auto;
+}
